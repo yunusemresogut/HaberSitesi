@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="{{ url_for('static', filename='img/fav.png') }}">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Magazine</title>
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+		<!--
+		CSS
+		============================================= -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/linearicons.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	</head>
+	<body>
+		<header>
+			
+			<div class="header-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-6 header-top-left no-padding">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="#"><i class="fa fa-behance"></i></a></li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-6 header-top-right no-padding">
+							<ul>
+								<li><a href="tel:+905554443322"><span class="lnr lnr-phone-handset"></span><span>Whatsapp İhbar Hattı: +90 555 444 3322</span></a></li>
+								<li><a href="mailto:destek@habersitesi.com"><span class="lnr lnr-envelope"></span><span>destek@habersitesi.com</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="logo-wrap">
+				<div class="container">
+					<div class="row justify-content-between align-items-center">
+						<div class="col-lg-4 col-md-4 col-sm-12 logo-left no-padding">
+							<a href="index.html">
+								<img class="img-fluid" src="{{ url_for('static', filename='img/logo1.png') }}" alt="">
+							</a>
+						</div>
+						<div class="col-lg-8 col-md-8 col-sm-12 logo-right no-padding ads-banner">
+							<img class="img-fluid" src="{{ url_for('static', filename='img/banner-ad.jpg') }}" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container main-menu" id="main-menu">
+				<div class="row align-items-center justify-content-between">
+					<nav id="nav-menu-container">
+						<ul class="nav-menu">
+							<li class="menu-active"><a href="index.html">Ana Sayfa</a></li>
+							<li><a href="archive.html">Arşiv</a></li>
+							<li><a href="category.html">Kategori</a></li>
+							<li class="menu-has-children"><a href="">Haberler</a>
+							<ul>
+								<li><a href="standard-post.html">Gündem</a></li>
+								<li><a href="image-post.html">Spor</a></li>
+								<li><a href="gallery-post.html">Ekonomi</a></li>
+								<li><a href="video-post.html">Magazin</a></li>
+								<li><a href="audio-post.html">Son Dakika</a></li>
+							</ul>
+						</li>
+						<li><a href="about.html">Hakkımızda</a></li>
+						<li><a href="contact.html">İletisim</a></li>
+					</ul>
+					</nav><!-- #nav-menu-container -->
+					<div class="navbar-right">
+						<form class="Search">
+							<input type="text" class="form-control Search-box" name="Search-box" id="Search-box" placeholder="Ara">
+							<label for="Search-box" class="Search-box-label">
+								<span class="lnr lnr-magnifier"></span>
+							</label>
+							<span class="Search-close">
+								<span class="lnr lnr-cross"></span>
+							</span>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div class="site-main-container">
+			<!-- Start top-post Area -->
+			<section class="top-post-area pt-10">
+				<div class="container no-padding">
+					<div class="row small-gutters">
+						<div class="col-lg-8 top-post-left">
+							<div class="feature-image-thumb relative">
+								<div class="overlay overlay-bg"></div>
+								<img class="img-fluid" src="{{ url_for('static', filename='img/top-post1.jpg') }}" alt="">
+							</div>
+							<div class="top-post-details">
+								<ul class="tags">
+									<li><a href="#">Örnek Başlık</a></li>
+								</ul>
+								<a href="image-post.html">
+									<h3>Örnek Haber</h3>
+								</a>
+								<ul class="meta">
+									<li><a href="#"><span class="lnr lnr-user"></span>Yazar</a></li>
+									<li><a href="#"><span class="lnr lnr-calendar-full"></span>01 Kasım, 2019</a></li>
+									<li><a href="#"><span class="lnr lnr-bubble"></span>06 Yorumlar</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-4 top-post-right">
+							<div class="single-top-post">
+								<div class="feature-image-thumb relative">
+									<div class="overlay overlay-bg"></div>
+									<img class="img-fluid" src="{{ url_for('static', filename='img/top-post2.jpg') }}" alt="">
+								</div>
+								<div class="top-post-details">
+									<ul class="tags">
+										<li><a href="#">Örnek Başlık</a></li>
+									</ul>
+									<a href="image-post.html">
+										<h4>Örnek Haber</h4>
+									</a>
+									<ul class="meta">
+										<li><a href="#"><span class="lnr lnr-user"></span>Yazar</a></li>
+										<li><a href="#"><span class="lnr lnr-calendar-full"></span>01 Kasım, 2019</a></li>
+										<li><a href="#"><span class="lnr lnr-bubble"></span>06 Yorumlar</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="single-top-post mt-10">
+								<div class="feature-image-thumb relative">
+									<div class="overlay overlay-bg"></div>
+									<img class="img-fluid" src="{{ url_for('static', filename='img/top-post3.jpg') }}" alt="">
+								</div>
+								<div class="top-post-details">
+									<ul class="tags">
+										<li><a href="#">Örnek Başlık</a></li>
+									</ul>
+									<a href="image-post.html">
+										<h4>Örnek Haber</h4>
+									</a>
+									<ul class="meta">
+										<li><a href="#"><span class="lnr lnr-user"></span>Yazar</a></li>
+										<li><a href="#"><span class="lnr lnr-calendar-full"></span>01 Kasım, 2019</a></li>
+										<li><a href="#"><span class="lnr lnr-bubble"></span>06 Yorumlar</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="news-tracker-wrap">
+								<h6><span>Flaş Haber:</span>   <a href="#">Örnek Haber</a></h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End top-post Area -->
+			<!-- Start latest-post Area -->
+			<section class="latest-post-area pb-120">
+				<div class="container no-padding">
+					<div class="row">
+						<div class="col-lg-8 post-list">
+							<!-- Start latest-post Area -->
+							<div class="latest-post-wrap">
+								<h4 class="cat-title">Son Haberler</h4>
+								<div class="single-latest-post row align-items-center">
+									<div class="col-lg-5 post-left">
+										<div class="feature-img relative">
+											<div class="overlay overlay-bg"></div>
+											<img class="img-fluid" src="{{ url_for('static', filename='img/l1.jpg') }}" alt="">
+										</div>
+										<ul class="tags">
+											<li><a href="#">Yaşam Tarzı</a></li>
+										</ul>
+									</div>
+									<div class="col-lg-7 post-right">
+										<a href="image-post.html">
+											<h4>Örnek Başlık.</h4>
+										</a>
+										<ul class="meta">
+											<li><a href="#"><span class="lnr lnr-user"></span>Yazar</a></li>
+											<li><a href="#"><span class="lnr lnr-calendar-full"></span>01 Kasım, 2019</a></li>
+											<li><a href="#"><span class="lnr lnr-bubble"></span>06 Yorumlar</a></li>
+										</ul>
+										<p class="excert">
+											Örnek haber içeriği.
+										</p>
+									</div>
+								</div>
+								<div class="single-latest-post row align-items-center">
+									<div class="col-lg-5 post-left">
+										<div class="feature-img relative">
+											<div class="overlay overlay-bg"></div>
+											<img class="img-fluid" src="{{ url_for('static', filename='img/l2.jpg') }}" alt="">
+										</div>
+										<ul class="tags">
+											<li><a href="#">Bilim</a></li>
+										</ul>
+									</div>
+									<div class="col-lg-7 post-right">
+										<a href="image-post.html">
+											<h4>Örnek Başlık.</h4>
+										</a>
+										<ul class="meta">
+											<li><a href="#"><span class="lnr lnr-user"></span>Yazar</a></li>
+											<li><a href="#"><span class="lnr lnr-calendar-full"></span>01 Kasım, 2019</a></li>
+											<li><a href="#"><span class="lnr lnr-bubble"></span>06 Yorumlar</a></li>
+										</ul>
+										<p>
+											Örnek haber içeriği.
+										</p>
+									</div>
+								</div>
+								<div class="single-latest-post row align-items-center">
+									<div class="col-lg-5 post-left">
+										<div class="feature-img relative">
+											<div class="overlay overlay-bg"></div>
+											<img class="img-fluid" src="{{ url_for('static', filename='img/l3.jpg') }}" alt="">
+										</div>
+										<ul class="tags">
+											<li><a href="#">Seyahat</a></li>
+										</ul>
+									</div>
+									<div class="col-lg-7 post-right">
+										<a href="image-post.html">
+											<h4>Örnek Başlık.</h4>
+										</a>
+										<ul class="meta">
+											<li><a href="#"><span class="lnr lnr-user"></span>Yazar</a></li>
+											<li><a href="#"><span class="lnr lnr-calendar-full"></span>01 Kasım, 2019</a></li>
+											<li><a href="#"><span class="lnr lnr-bubble"></span>06 Yorumlar</a></li>
+										</ul>
+										<p>
+											Örnek haber içeriği.
+										</p>
+									</div>
+								</div>
+								<div class="single-latest-post row align-items-center">
+									<div class="col-lg-5 post-left">
+										<div class="feature-img relative">
+											<div class="overlay overlay-bg"></div>
+											<img class="img-fluid" src="{{ url_for('static', filename='img/l4.jpg') }}" alt="">
+										</div>
+										<ul class="tags">
+											<li><a href="#">Moda</a></li>
+										</ul>
+									</div>
+									<div class="col-lg-7 post-right">
+										<a href="image-post.html">
+											<h4>Örnek Başlık.</h4>
+										</a>
+										<ul class="meta">
+											<li><a href="#"><span class="lnr lnr-user"></span>Yazar</a></li>
+											<li><a href="#"><span class="lnr lnr-calendar-full"></span>01 Kasım, 2019</a></li>
+											<li><a href="#"><span class="lnr lnr-bubble"></span>06 Yorumlar</a></li>
+										</ul>
+										<p>
+											Örnek haber içeriği.
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- End latest-post Area -->
+							
+							<!-- Start banner-ads Area -->
+							<div class="col-lg-12 ad-widget-wrap mt-30 mb-30">
+								<img class="img-fluid" src="{{ url_for('static', filename='img/banner-ad.jpg') }}" alt="">
+							</div>
+							<!-- End banner-ads Area -->
+							<!-- Start popular-post Area -->
+							<div class="popular-post-wrap">
+								<h4 class="title">Popüler Haberler</h4>
+								<div class="feature-post relative">
+									<div class="feature-img relative">
+										<div class="overlay overlay-bg"></div>
+										<img class="img-fluid" src="{{ url_for('static', filename='img/f1.jpg') }}" alt="">
+									</div>
+									<div class="details">
+										<ul class="tags">
+											<li><a href="#">Örnek Başlık</a></li>
+										</ul>
+										<a href="image-post.html">
+											<h3>Örnek Haber.</h3>
+										</a>
+										<ul class="meta">
+											<li><a href="#"><span class="lnr lnr-user"></span>Yazar</a></li>
+											<li><a href="#"><span class="lnr lnr-calendar-full"></span>01 Kasım, 2019</a></li>
+											<li><a href="#"><span class="lnr lnr-bubble"></span>06 Yorumlar</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="row mt-20 medium-gutters">
+									<div class="col-lg-6 single-popular-post">
+										<div class="feature-img-wrap relative">
+											<div class="feature-img relative">
+												<div class="overlay overlay-bg"></div>
+												<img class="img-fluid" src="{{ url_for('static', filename='img/f2.jpg') }}" alt="">
+											</div>
+											<ul class="tags">
+												<li><a href="#">Seyahat</a></li>
+											</ul>
+										</div>
+										<div class="details">
+											<a href="image-post.html">
+												<h4>Örnek Başlık.</h4>
+											</a>
+											<ul class="meta">
+												<li><a href="#"><span class="lnr lnr-user"></span>Yazar</a></li>
+												<li><a href="#"><span class="lnr lnr-calendar-full"></span>01 Kasım, 2019</a></li>
+												<li><a href="#"><span class="lnr lnr-bubble"></span>06 Yorumlar</a></li>
+											</ul>
+											<p class="excert">
+												Örnek haber içeriği.
+											</p>
+										</div>
+									</div>
+									<div class="col-lg-6 single-popular-post">
+										<div class="feature-img-wrap relative">
+											<div class="feature-img relative">
+												<div class="overlay overlay-bg"></div>
+												<img class="img-fluid" src="{{ url_for('static', filename='img/f3.jpg') }}" alt="">
+											</div>
+											<ul class="tags">
+												<li><a href="#">Seyahat</a></li>
+											</ul>
+										</div>
+										<div class="details">
+											<a href="image-post.html">
+												<h4>Örnek Başlık.</h4>
+											</a>
+											<ul class="meta">
+												<li><a href="#"><span class="lnr lnr-user"></span>Yazar</a></li>
+												<li><a href="#"><span class="lnr lnr-calendar-full"></span>01 Kasım, 2019</a></li>
+												<li><a href="#"><span class="lnr lnr-bubble"></span>06 Yorumlar</a></li>
+											</ul>
+											<p class="excert">
+												Örnek haber içerği.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End popular-post Area -->
+							<!-- Start relavent-story-post Area -->
+							<div class="relavent-story-post-wrap mt-30">
+								<h4 class="title">İlgili Makaleler</h4>
+								<div class="relavent-story-list-wrap">
+									<div class="single-relavent-post row align-items-center">
+										<div class="col-lg-5 post-left">
+											<div class="feature-img relative">
+												<div class="overlay overlay-bg"></div>
+												<img class="img-fluid" src="{{ url_for('static', filename='img/r1.jpg') }}" alt="">
+											</div>
+											<ul class="tags">
+												<li><a href="#">Yaşam Tarzı</a></li>
+											</ul>
+										</div>
+										<div class="col-lg-7 post-right">
+											<a href="image-post.html">
+												<h4>Örnek başlık.</h4>
+											</a>
+											<ul class="meta">
+												<li><a href="#"><span class="lnr lnr-user"></span>Yazar</a></li>
+												<li><a href="#"><span class="lnr lnr-calendar-full"></span>01 Kasım, 2019</a></li>
+												<li><a href="#"><span class="lnr lnr-bubble"></span>06 Yorumlar</a></li>
+											</ul>
+											<p class="excert">
+												Örnek haber içeriği.
+											</p>
+										</div>
+									</div>
+									<div class="single-relavent-post row align-items-center">
+										<div class="col-lg-5 post-left">
+											<div class="feature-img relative">
+												<div class="overlay overlay-bg"></div>
+												<img class="img-fluid" src="{{ url_for('static', filename='img/r2.jpg') }}" alt="">
+											</div>
+											<ul class="tags">
+												<li><a href="#">Bilim</a></li>
+											</ul>
+										</div>
+										<div class="col-lg-7 post-right">
+											<a href="image-post.html">
+												<h4>Örnek Başlık.</h4>
+											</a>
+											<ul class="meta">
+												<li><a href="#"><span class="lnr lnr-user"></span>Yazar</a></li>
+												<li><a href="#"><span class="lnr lnr-calendar-full"></span>01 Kasım, 2019</a></li>
+												<li><a href="#"><span class="lnr lnr-bubble"></span>06 Yorumlar</a></li>
+											</ul>
+											<p class="excert">
+												Örnek haber içeriği.
+											</p>
+										</div>
+									</div>
+									<div class="single-relavent-post row align-items-center">
+										<div class="col-lg-5 post-left">
+											<div class="feature-img relative">
+												<div class="overlay overlay-bg"></div>
+												<img class="img-fluid" src="{{ url_for('static', filename='img/r3.jpg') }}" alt="">
+											</div>
+											<ul class="tags">
+												<li><a href="#">Seyahat</a></li>
+											</ul>
+										</div>
+										<div class="col-lg-7 post-right">
+											<a href="image-post.html">
+												<h4>Örnek başlık.</h4>
+											</a>
+											<ul class="meta">
+												<li><a href="#"><span class="lnr lnr-user"></span>Yazar</a></li>
+												<li><a href="#"><span class="lnr lnr-calendar-full"></span>01 Kasım, 2019</a></li>
+												<li><a href="#"><span class="lnr lnr-bubble"></span>06 Yorumlar</a></li>
+											</ul>
+											<p class="excert">
+												Örnek haber içeriği.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End relavent-story-post Area -->
+						</div>
+						<div class="col-lg-4">
+							<div class="sidebars-area">
+								<div class="single-sidebar-widget editors-pick-widget">
+									<h6 class="title">Editörün Seçimi</h6>
+									<div class="editors-pick-post">
+										<div class="feature-img-wrap relative">
+											<div class="feature-img relative">
+												<div class="overlay overlay-bg"></div>
+												<img class="img-fluid" src="{{ url_for('static', filename='img/e1.jpg') }}" alt="">
+											</div>
+											<ul class="tags">
+												<li><a href="#">Seyahat</a></li>
+											</ul>
+										</div>
+										<div class="details">
+											<a href="image-post.html">
+												<h4 class="mt-20">Örnek başlık.</h4>
+											</a>
+											<ul class="meta">
+												<li><a href="#"><span class="lnr lnr-user"></span>Yazar</a></li>
+												<li><a href="#"><span class="lnr lnr-calendar-full"></span>01 Kasım, 2019</a></li>
+												<li><a href="#"><span class="lnr lnr-bubble"></span>06 Yorumlar</a></li>
+											</ul>
+											<p class="excert">
+												Örnek haber içeriği.
+											</p>
+										</div>
+										<div class="post-lists">
+											<div class="single-post d-flex flex-row">
+												<div class="thumb">
+													<img src="{{ url_for('static', filename='img/e2.jpg') }}" alt="">
+												</div>
+												<div class="detail">
+													<a href="image-post.html"><h6>Örnek İçerik</h6></a>
+													<ul class="meta">
+														<li><a href="#"><span class="lnr lnr-calendar-full"></span>01 Kasım, 2019</a></li>
+														<li><a href="#"><span class="lnr lnr-bubble"></span>06</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="single-post d-flex flex-row">
+												<div class="thumb">
+													<img src="{{ url_for('static', filename='img/e3.jpg') }}" alt="">
+												</div>
+												<div class="detail">
+													<a href="image-post.html"><h6>Örnek İçerik</h6></a>
+													<ul class="meta">
+														<li><a href="#"><span class="lnr lnr-calendar-full"></span>01 Kasım, 2019</a></li>
+														<li><a href="#"><span class="lnr lnr-bubble"></span>06</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="single-post d-flex flex-row">
+												<div class="thumb">
+													<img src="{{ url_for('static', filename='img/e4.jpg') }}" alt="">
+												</div>
+												<div class="detail">
+													<a href="image-post.html"><h6>Örnek İçerik</h6></a>
+													<ul class="meta">
+														<li><a href="#"><span class="lnr lnr-calendar-full"></span>01 Kasım, 2019</a></li>
+														<li><a href="#"><span class="lnr lnr-bubble"></span>06</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="single-sidebar-widget ads-widget">
+									<img class="img-fluid" src="{{ url_for('static', filename='img/sidebar-ads.jpg') }}" alt="">
+								</div>
+								<div class="single-sidebar-widget newsletter-widget">
+									<h6 class="title">Bülten</h6>
+									<p>
+										Her zaman takipte kalmak için abone ol..
+									</p>
+									<div class="form-group d-flex flex-row">
+										<div class="col-autos">
+											<div class="input-group">
+												<input class="form-control" placeholder="Email Adres" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Adres'" type="text">
+											</div>
+										</div>
+										<a href="#" class="bbtns">Abone Ol</a>
+									</div>
+									<p>
+										Bizi istediğiniz zaman abonelikten iptal edebilirsiniz.
+									</p>
+								</div>
+								<div class="single-sidebar-widget most-popular-widget">
+									<h6 class="title">En Popüler</h6>
+									<div class="single-list flex-row d-flex">
+										<div class="thumb">
+											<img src="{{ url_for('static', filename='img/m1.jpg') }}" alt="">
+										</div>
+										<div class="details">
+											<a href="image-post.html">
+												<h6>Örnek İçerik</h6>
+											</a>
+											<ul class="meta">
+												<li><a href="#"><span class="lnr lnr-calendar-full"></span>01 Kasım, 2019</a></li>
+												<li><a href="#"><span class="lnr lnr-bubble"></span>06</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="single-list flex-row d-flex">
+										<div class="thumb">
+											<img src="{{ url_for('static', filename='img/m2.jpg') }}" alt="">
+										</div>
+										<div class="details">
+											<a href="image-post.html">
+												<h6>Örnek İçerik</h6>
+											</a>
+											<ul class="meta">
+												<li><a href="#"><span class="lnr lnr-calendar-full"></span>01 Kasım, 2019</a></li>
+												<li><a href="#"><span class="lnr lnr-bubble"></span>06</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="single-list flex-row d-flex">
+										<div class="thumb">
+											<img src="{{ url_for('static', filename='img/m3.jpg') }}" alt="">
+										</div>
+										<div class="details">
+											<a href="image-post.html">
+												<h6>Örnek İçerik</h6>
+											</a>
+											<ul class="meta">
+												<li><a href="#"><span class="lnr lnr-calendar-full"></span>01 Kasım, 2019</a></li>
+												<li><a href="#"><span class="lnr lnr-bubble"></span>06</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="single-list flex-row d-flex">
+										<div class="thumb">
+											<img src="{{ url_for('static', filename='img/m4.jpg') }}" alt="">
+										</div>
+										<div class="details">
+											<a href="image-post.html">
+												<h6>Örnek İçerik</h6>
+											</a>
+											<ul class="meta">
+												<li><a href="#"><span class="lnr lnr-calendar-full"></span>01 Kasım, 2019</a></li>
+												<li><a href="#"><span class="lnr lnr-bubble"></span>06</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="single-sidebar-widget social-network-widget">
+									<h6 class="title">Sosyal Ağlar</h6>
+									<ul class="social-list">
+										<li class="d-flex justify-content-between align-items-center fb">
+											<div class="icons d-flex flex-row align-items-center">
+												<i class="fa fa-facebook" aria-hidden="true"></i>
+												<p>983 Beğeni</p>
+											</div>
+											<a href="#">Sayfamızı beğenin</a>
+										</li>
+										<li class="d-flex justify-content-between align-items-center tw">
+											<div class="icons d-flex flex-row align-items-center">
+												<i class="fa fa-twitter" aria-hidden="true"></i>
+												<p>983 Takipçi</p>
+											</div>
+											<a href="#">Bizi Takip Et</a>
+										</li>
+										<li class="d-flex justify-content-between align-items-center yt">
+											<div class="icons d-flex flex-row align-items-center">
+												<i class="fa fa-youtube-play" aria-hidden="true"></i>
+												<p>983 Abone</p>
+											</div>
+											<a href="#">Abone Ol</a>
+										</li>
+										<li class="d-flex justify-content-between align-items-center rs">
+											<div class="icons d-flex flex-row align-items-center">
+												<i class="fa fa-rss" aria-hidden="true"></i>
+												<p>983 Abone</p>
+											</div>
+											<a href="#">Abone Ol</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End latest-post Area -->
+		</div>
+		
+		<!-- start footer Area -->
+		<footer class="footer-area section-gap">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 single-footer-widget">
+						<h4>En Popüler Ürünler</h4>
+						<ul>
+							<li><a href="#">Yönetilen Web Sitesi</a></li>
+							<li><a href="#">İtibarınızı Yönetin</a></li>
+							<li><a href="#">Güç Araçları</a></li>
+							<li><a href="#">Pazarlama Hizmeti</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-6 single-footer-widget">
+						<h4>Hızlı Linkler</h4>
+						<ul>
+							<li><a href="#">Meslekler</a></li>
+							<li><a href="#">Marka Varlıkları</a></li>
+							<li><a href="#">Yatırımcı İlişkileri</a></li>
+							<li><a href="#">Kullanım Şartları</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-6 single-footer-widget">
+						<h4>Özellikler</h4>
+						<ul>
+							<li><a href="#">Meslekler</a></li>
+							<li><a href="#">Marka Varlıkları</a></li>
+							<li><a href="#">Yatırımcı İlişkileri</a></li>
+							<li><a href="#">Kullanım Şartları</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-6 single-footer-widget">
+						<h4>Kaynaklar</h4>
+						<ul>
+							<li><a href="#">Kılavuzlar</a></li>
+							<li><a href="#">Araştırma</a></li>
+							<li><a href="#">Uzmanlar</a></li>
+							<li><a href="#">Ajanslar</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 single-footer-widget">
+						<h4>Instagram</h4>
+						<ul class="instafeed d-flex flex-wrap">
+							<li><img src="{{ url_for('static', filename='img/i1.jpg') }}" alt=""></li>
+							<li><img src="{{ url_for('static', filename='img/i2.jpg') }}" alt=""></li>
+							<li><img src="{{ url_for('static', filename='img/i3.jpg') }}" alt=""></li>
+							<li><img src="{{ url_for('static', filename='img/i4.jpg') }}" alt=""></li>
+							<li><img src="{{ url_for('static', filename='img/i5.jpg') }}" alt=""></li>
+							<li><img src="{{ url_for('static', filename='img/i6.jpg') }}" alt=""></li>
+							<li><img src="{{ url_for('static', filename='img/i7.jpg') }}" alt=""></li>
+							<li><img src="{{ url_for('static', filename='img/i8.jpg') }}" alt=""></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-bottom row align-items-center">
+					<p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Tüm Hakları Saklıdır &copy;<script>document.write(new Date().getFullYear());</script> 2019 KTÜ İSBB HABER SİTESİ <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://habersitesi.com" target="_blank">Haber Sitesi</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+					<div class="col-lg-4 col-md-12 footer-social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-dribbble"></i></a>
+						<a href="#"><i class="fa fa-behance"></i></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End footer Area -->
+		<script src="{{ url_for('static', filename='js/vendor/jquery-2.2.4.min.js') }}"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="{{ url_for('static', filename='js/vendor/bootstrap.min.js') }}"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+		<script src="{{ url_for('static', filename='js/easing.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/hoverIntent.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/superfish.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.ajaxchimp.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/mn-accordion.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery-ui.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/mail-script.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+	</body>
+</html>

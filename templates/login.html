@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta charset='UTF-8'>
+	<title>Giriş &rsaquo; Habersitesi.com</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/stil.css') }}" type="text/css" media="screen" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/giris.css') }}" type="text/css" media="screen" />
+	<!--[if IE 6]>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/ie.css') }}" />
+	<![endif]-->
+</head>
+<body>
+
+<!-- girisTasiyici -->
+<div id="girisTasiyici">
+	
+	<!-- girisUst -->
+	<div id="girisUst">
+		<h1><a href="#">Panele Giriş</a></h1>
+	</div>
+	<!-- girisUst -->
+	
+	<!-- hataKutusu -->
+	<div class="hataKutusu">
+		<h3 class="mesajBasligi">Giriş başarısız</h3>
+		<p>Kullanıcı adınız veya parolanız hatalı. Lütfen tekrar deneyiniz.<p>
+	</div>
+	<!-- hataKutusu son -->
+	
+	
+	<!-- menuBasligi -->
+	<div class="menuBasligi">Lütfen kendinizi tanıtın.</div>
+	<!-- menuBasligi son -->
+	
+	
+	<!-- girisFormu -->
+	<form id="girisFormu" method="post" action="index.html">
+		<p>
+			<label>Kullanıcı Adı</label>
+			<input type="text" value="admin" class="metinKutusu" />
+		</p>
+		
+		<p>
+			<label>Parola</label>
+			<input type="password" value="123456" class="metinKutusu" />
+		</p>
+		
+		<p>
+			<span class="sagKaydir">
+			<input type="submit" value="Tamam" class="dugme" />
+			</span>
+			
+			<span class="solKaydir">
+			<input type="checkbox" value="1" class="kontrolKutusu" /> Beni hatırla
+			</span>
+			
+			<div class="temizle"></div>
+		</p>
+	</form>
+	<!-- girisFormu son -->
+	
+	
+	<!-- girisAlt -->
+	<div id="girisAlt">
+	HaberSitesi &copy; 2019
+	</div>
+	<!-- girisAlt son -->
+
+	
+</div>
+<!-- girisTasiyici son -->
+
+</body>
+</html>
